@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from "react";
-import LogoGaleria from "../../assets/images/logo-galeria.png";
 import { Link } from "react-router-dom";
 
 function MainContent({logged, user_id}) {
@@ -12,13 +11,6 @@ function MainContent({logged, user_id}) {
 
     return (
         <>
-            <div className="sm:mx-auto sm:w-full sm:max-w-md">
-                    <img
-                        className="mx-auto h-72 w-auto"
-                        src={ LogoGaleria }
-                        alt="logo_empresa"
-                    />
-            </div>
             {
                 !logged_status ?
                     <>
@@ -62,26 +54,20 @@ function MainContent({logged, user_id}) {
                                         <b>Galería</b> es un recorrido por las distintas obras que puedes encontrar en nuestra galería.
                                     </p>
                                     <p className="mx-auto mt-6 max-w-xl text-lg leading-6 text-gray-600 text-justify">
-                                        <b>Cartera</b> Es una cartera de monedas digitales que podrá adquirir contestando las preguntas que se presentaran después de la premiación y usarlas para subastar por alguna de nuestras obras.
+                                        <b>Cartera</b> Es una cartera de monedas digitales que podrá adquirir contestando las preguntas que se presentaran después de la premiación y usarlas para subastar por alguna de las obras.
                                     </p>
                                     <div className="mt-10 grid grid-cols-1 items-center justify-center gap-6">
                                         <Link
-                                        to={'/galeria-arte'}
+                                        to={'/galeria'}
                                         className="rounded-md bg-principal px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-principal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-principal"
                                         >
                                             Galería
                                         </Link>
                                         <Link
-                                        to={'/galeria'}
-                                        className="rounded-md bg-principal px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-principal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-principal"
-                                        >
-                                            Muro del reconocimiento
-                                        </Link>
-                                        <Link
                                         to={'/cartera-desc'}
                                         className="rounded-md bg-principal px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-principal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-principal"
                                         >
-                                            Cartera Cryptolicoins
+                                            Cartera Cryptomonedas
                                         </Link>
                                     </div>
                                 </div>

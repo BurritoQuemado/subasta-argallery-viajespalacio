@@ -1,6 +1,5 @@
 import React from "react";
 import { RegisterForm } from "../components";
-import Logo from "../assets/images/logo.png";
 import { useNavigate } from 'react-router-dom';
 
 export default function RegisterPage(){

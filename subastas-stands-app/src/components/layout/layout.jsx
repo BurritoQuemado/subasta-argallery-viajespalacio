@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { Popover, Transition } from '@headlessui/react'
 import Logo from '../../assets/images/logo.png'
-import LogoLicon from '../../assets/images/logo-licon.png'
 import {
   Bars3Icon,
   XMarkIcon,
@@ -16,10 +15,6 @@ const navigation = [
     },
     {
       name: 'Galería', 
-      href: '/galeria-arte'
-    },
-    {
-      name: 'Muro del Reconocimiento',
       href: '/galeria'
     },
 ]
@@ -27,7 +22,7 @@ const navigation = [
 const navigation_logged = [
 
     {
-      name: "Cartera Cryptolicoins",
+      name: "Cartera Crytomonedas",
       href: '/cartera-desc',
       target: '_self'
     }
@@ -37,7 +32,7 @@ const footerNavigation = {
 
   legal: [
     { name: 'Aviso de Privacidad', 
-      href: 'https://licon.com.mx/aviso-de-privacidad/' 
+      href: 'https://www.viajespalacio.com.mx/aviso-de-privacidad.html' 
     },
   ],
 }
@@ -51,7 +46,7 @@ class Layout extends Component{
       <div className="bg-white">
         <div className="relative overflow-hidden">
           <Popover as="header" className="relative">
-            <div className="bg-white pt-6 pb-0">
+            <div className="bg-gray-300 pt-6 pb-0">
               <nav
                 className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
                 aria-label="Global"
@@ -59,15 +54,15 @@ class Layout extends Component{
                 <div className="flex flex-1 items-center">
                   <div className="flex w-full items-center align-middle justify-between md:w-auto">
                     <Link to="/">
-                      <span className="sr-only">Wallet Cryptolicoins</span>
+                      <span className="sr-only">Wallet Cryptocoins</span>
                       <img
-                        className="h-6 w-auto lg:h-8"
+                        className="h-10 w-auto lg:h-16"
                         src={Logo}
-                        alt="logo-empresa"
+                        alt="logo-viajespalacio"
                       />
                     </Link>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-principal p-2 text-white focus:outline-none focus:ring-2 focus:ring-white">
+                      <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-principal p-2 text-black focus:outline-none focus:ring-2 focus:ring-black">
                         <span className="sr-only">Open main menu</span>
                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -78,7 +73,7 @@ class Layout extends Component{
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="text-base font-medium text-principal hover:text-gray-300"
+                        className="text-base font-medium text-black hover:text-gray-600"
                       >
                         {item.name}
                       </Link>
@@ -90,7 +85,7 @@ class Layout extends Component{
                           to={item.href}
                           target={item.target}
                           rel="nonreferrer noreferrer"
-                          className="text-base font-medium text-principal hover:text-gray-300"
+                          className="text-base font-medium text-black hover:text-gray-600"
                         >
                           {item.name}
                         </Link>
@@ -104,17 +99,17 @@ class Layout extends Component{
                      <Link
                         to='/'
                         onClick={logout}
-                        className="inline-flex items-center rounded-md border border-transparent bg-principal px-4 py-2 text-base font-medium text-white"
+                        className="inline-flex items-center rounded-md border border-transparent bg-principal px-4 py-2 text-base font-medium text-black"
                       >
                      Salir
                    </Link>
                   : <>
-                    <Link to="/registro" className="text-base font-medium text-principal">
+                    <Link to="/registro" className="text-base font-medium text-black">
                       Registrarse
                     </Link>
                     <Link
                       to="/login"
-                      className="inline-flex items-center rounded-md border border-transparent bg-principal px-4 py-2 text-base font-medium text-white"
+                      className="inline-flex items-center rounded-md border border-transparent bg-principal px-4 py-2 text-base font-medium text-black"
                     >
                       Ingresar
                     </Link>
@@ -140,7 +135,7 @@ class Layout extends Component{
                     <div>
                       <Link to='/'>
                       <img
-                        className="h-4 w-auto"
+                        className="h-8 w-auto"
                         src={Logo}
                         alt="logo-empresa"
                       />
@@ -183,7 +178,7 @@ class Layout extends Component{
                       <Link
                         to='/'
                         onClick={logout}
-                        className="block w-full rounded-md bg-principal py-3 px-4 text-center font-medium text-white shadow hover:from-teal-600 hover:to-cyan-700"
+                        className="block w-full rounded-md bg-black py-3 px-4 text-center font-medium text-white shadow hover:from-teal-600 hover:to-cyan-700"
                       >
                         Salir
                       </Link>
@@ -192,7 +187,7 @@ class Layout extends Component{
                     <div className="mt-6 px-5">
                       <Link
                         to="/registro"
-                        className="block w-full rounded-md bg-principal py-3 px-4 text-center font-medium text-white shadow hover:from-teal-600 hover:to-cyan-700"
+                        className="block w-full rounded-md bg-principal py-3 px-4 text-center font-medium text-black shadow hover:from-teal-600 hover:to-cyan-700"
                       >
                         Registrarse
                       </Link>
@@ -223,9 +218,9 @@ class Layout extends Component{
               <div className="xl:grid xl:grid-cols-3 xl:gap-8 justify-center">
                 <div className="py-4 sm:mx-auto sm:w-full sm:max-w-md">
                     <img
-                        className="mx-auto h-32 w-auto"
-                        src={ LogoLicon }
-                        alt="logo_grupolicon"
+                        className="mx-auto h-20 w-auto"
+                        src={ Logo }
+                        alt="logo_viajespalacio"
                     />
                 </div>
                 <div className="mt-0 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
@@ -247,7 +242,7 @@ class Layout extends Component{
               </div>
               <div className="mt-12 border-t border-gray-200 py-8">
                 <p className="text-base text-gray-400 xl:text-center">
-                  &copy; 2023 2024 Polar Multimedia. Todos los derechos reservados.
+                  &copy; 2024 - 2025 Polar Multimedia. Todos los derechos reservados.
                 </p>
               </div>
             </div>

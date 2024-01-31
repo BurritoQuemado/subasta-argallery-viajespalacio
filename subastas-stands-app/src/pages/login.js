@@ -1,6 +1,5 @@
 import React from "react";
 import { LoginForm } from "../components";
-import Logo from "../assets/images/logo.png";
 import { useNavigate } from 'react-router-dom';
 
 
