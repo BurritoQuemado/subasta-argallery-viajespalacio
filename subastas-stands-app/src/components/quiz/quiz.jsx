@@ -22,7 +22,7 @@
         return (
             <>
                 { !showResult ?
-                <div className="bg-white px-4 py-5">
+                <div className="bg-white px-4 py-2 border border-black rounded-md mx-4">
                     <div className="">
                         <div className="text-right">
                             <span >{currentQuestion + 1}</span>
