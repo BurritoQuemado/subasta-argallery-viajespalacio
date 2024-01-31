@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { 
-    Transactions,
-    Balance,
-    QRScanner
+    Balance
 } from "../"
 
 function Wallet({ name, balance, history, user_id, valid_codes}){
