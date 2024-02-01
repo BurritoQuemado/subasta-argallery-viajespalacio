@@ -11,10 +11,9 @@ function WalletPage() {
 
 
     useEffect(() => {
-
         const config = {
-            method: 'get',
-            url: "https://subastas-stand-licon-a5fc970ae98d.herokuapp.com/getTransactions/"+StoredUserId,
+            method: 'GET',
+            url: "http://localhost:3000/getUserData/"+StoredUserId,
             headers: { 
               'Content-Type': 'application/json',
               "Access-Control-Allow-Origin": "*"
@@ -27,7 +26,7 @@ function WalletPage() {
             setUserBalance(parseInt(res.data.balance))
         })
 
-    },[])
+    },[StoredUserId])
 
 
     return (

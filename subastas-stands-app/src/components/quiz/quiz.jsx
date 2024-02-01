@@ -1,4 +1,4 @@
-    import React, { useState } from "react";
+    import React, { useState, useEffect } from "react";
     import questions from "../../questions";
     import { Link } from "react-router-dom";
 
@@ -19,14 +19,34 @@
                 setShowResult(true);
             }
         }
+        useEffect(() => {
+            if(showResult){
+                fetch('http://localhost:3000/answerQuiz', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        user_id: user_id,
+                        currency: result * 1000
+                    })
+                })
+                .then(response => response.json())
+                .then(json => console.log(json))
+            }
+        }, [result, showResult, user_id])
+
         return (
             <>
                 { !showResult ?
                 <div className="bg-white px-4 py-2 ">
                     <div className="">
-                        <div className="text-right">
-                            <span >{currentQuestion + 1}</span>
-                            <span>/{questions.length}</span> 
+                        <div className="grid grid-cols-2">
+                            <div className="text-left">
+                                <span >Puntuación: {result * 1000}</span>
+                            </div>
+                            <div className="text-right">
+                                <span >Pregunta: {currentQuestion + 1}</span>
+                                <span>/{questions.length}</span>
+                            </div>
                         </div>
                         <div>
                             <div className="py-4">
@@ -46,7 +66,7 @@
                         <h2 className="font-bold">Tu resultado es: {result}/{questions.length}</h2>
                     </div>
                     <div className="text-center">
-                        <p>Con este resultado obtuviste <b>{result * 1000 }</b> Cryptomonedas</p>
+                        <p>Obtuviste <b>{result * 1000 }</b> Cryptomonedas</p>
                     </div>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link

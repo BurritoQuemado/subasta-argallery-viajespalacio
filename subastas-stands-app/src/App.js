@@ -47,7 +47,7 @@ function App () {
         <Route path='/registro' element={ <RegisterPage /> } />
         <Route path='/cartera-desc' element={ <WalletDescPage user_id={user_id} />} />
         <Route path='/galeria' element={ <GalleryPage /> } />
-        <Route path='/cuestionario/' element={ <QuizPage user_id={user_id} /> } />
+        <Route path='/cuestionario' element={ <QuizPage user_id={user_id} /> } />
       </Routes>
     </Layout>
   );

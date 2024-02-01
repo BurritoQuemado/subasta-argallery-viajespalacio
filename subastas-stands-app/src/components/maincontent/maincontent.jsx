@@ -18,7 +18,7 @@ function MainContent({logged, user_id}) {
                             <div className="px-6 py-12 sm:px-6 sm:py-32 lg:px-8">
                                 <div className="mx-auto max-w-2xl text-center">
                                     <p className="mx-auto mt-2 max-w-xl text-lg text-justify leading-8 text-gray-600">
-                                        Te damos la bienvenida a esta galería única en el mundo, inspirada en el reconocimiento a la labor de un grupo de <b>imparables</b> héroes anónimos que son la pieza inicial del proceso de sanación para toda la humanidad.
+                                        Te damos la bienvenida a esta galería única en el mundo.
                                     </p>
                                     <p className="mx-auto mt-6 max-w-xl text-lg text-justify leading-8 text-gray-600">
                                         Esta aplicación te servirá para ser envuelto en una dinámica <b>crypto-artística</b>, por lo que te solicitaremos algunos datos únicamente con el fin lúdico de reconocer tu participación.
@@ -29,7 +29,7 @@ function MainContent({logged, user_id}) {
                                     <div className="mt-10 flex items-center justify-center gap-x-6">
                                         <Link
                                         to="/registro"
-                                        className="rounded-md bg-principal px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-principal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-principal"
+                                        className="rounded-md bg-principal px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-principal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-principal"
                                         >
                                             Registrarse
                                         </Link>
