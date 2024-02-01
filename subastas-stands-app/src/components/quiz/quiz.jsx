@@ -21,7 +21,7 @@
         }
         useEffect(() => {
             if(showResult){
-                fetch('https://subasta-viajespalacio-24f6392aae86.herokuapp.com//answerQuiz', {
+                fetch('https://subasta-viajespalacio-24f6392aae86.herokuapp.com/answerQuiz', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
