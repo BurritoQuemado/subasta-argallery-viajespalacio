@@ -60,7 +60,7 @@ useEffect(() => {
     };
     fetchData();
   }
-}, [formErrors, formValues.email, formValues.password, isSubmit])
+}, [formErrors, formValues.email, formValues.password, isSubmit, setLoggedIn, signin])
 
 const validate = (values) => {
     const errors = {};

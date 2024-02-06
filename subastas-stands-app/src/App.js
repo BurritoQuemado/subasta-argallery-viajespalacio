@@ -7,7 +7,8 @@ import {
   RegisterPage,
   WalletDescPage,
   GalleryPage,
-  QuizPage
+  QuizPage,
+  PlayersListPage
 } from './pages'
 import { Layout } from './components';
 function App () {
@@ -48,6 +49,7 @@ function App () {
         <Route path='/cartera-desc' element={ <WalletDescPage user_id={user_id} />} />
         <Route path='/galeria' element={ <GalleryPage /> } />
         <Route path='/cuestionario' element={ <QuizPage user_id={user_id} /> } />
+        <Route path='/jugadores' element={ <PlayersListPage /> } />
       </Routes>
     </Layout>
   );
