@@ -48,7 +48,7 @@ function MainContent({logged, user_id}) {
                             <div className="px-6 py-4 sm:px-6 sm:py-32 lg:px-8">
                                 <div className="mx-auto max-w-2xl text-center">
                                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                        Esta es su guía de arte interactivo Viajes Palacio  s.
+                                        Esta es su guía de arte interactivo Viajes Palacio.
                                     </h2>
                                     <p className="mx-auto mt-6 max-w-xl text-lg leading-6 text-gray-600 text-justify">
                                         <b>Galería</b> es un recorrido por las distintas obras que puede encontrar en nuestra galería.
