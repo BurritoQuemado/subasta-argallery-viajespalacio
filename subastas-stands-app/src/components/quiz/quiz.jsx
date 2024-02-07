@@ -63,10 +63,10 @@
                 </div> 
                 : <div className="bg-white px-4 py-5">
                     <div className="text-center">
-                        <h2 className="font-bold">Tu resultado es: {result}/{questions.length}</h2>
+                        <h2 className="font-bold">Su resultado es: {result}/{questions.length}</h2>
                     </div>
                     <div className="text-center">
-                        <p>Obtuviste <b>{result * 1000 }</b> Cryptomonedas</p>
+                        <p>Obtuvo <b>{result * 1000 }</b> Cryptomonedas</p>
                     </div>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link

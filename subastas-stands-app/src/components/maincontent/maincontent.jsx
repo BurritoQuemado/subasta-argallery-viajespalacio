@@ -18,13 +18,13 @@ function MainContent({logged, user_id}) {
                             <div className="px-6 py-12 sm:px-6 sm:py-32 lg:px-8">
                                 <div className="mx-auto max-w-2xl text-center">
                                     <p className="mx-auto mt-2 max-w-xl text-lg text-justify leading-8 text-gray-600">
-                                        Te damos la bienvenida a esta galería única en el mundo.
+                                        Le damos la bienvenida a esta galería única en el mundo.
                                     </p>
                                     <p className="mx-auto mt-6 max-w-xl text-lg text-justify leading-8 text-gray-600">
-                                        Esta aplicación te servirá para ser envuelto en una dinámica <b>crypto-artística</b>, por lo que te solicitaremos algunos datos únicamente con el fin lúdico de reconocer tu participación.
+                                        Esta aplicación le servirá para ser envuelto en una dinámica <b>crypto-artística</b>, por lo que te solicitaremos algunos datos únicamente con el fin lúdico de reconocer tu participación.
                                     </p>
                                     <p className="mx-auto mt-6 max-w-xl text-lg text-justify leading-8 text-gray-600">
-                                        Si es la primera vez que ingresas, haz click en el botón <b>registrarse</b>, si ya ingresaste anteriormente, haz click en <b>Iniciar sesión</b>
+                                        Si es la primera vez que ingresa, haga click en el botón <b>registrarse</b>, si ya ingresó anteriormente, haga click en <b>Iniciar sesión</b>
                                     </p>
                                     <div className="mt-10 flex items-center justify-center gap-x-6">
                                         <Link
@@ -35,7 +35,7 @@ function MainContent({logged, user_id}) {
                                         </Link>
                                         
                                         <Link to="login" className="text-sm font-semibold leading-6 text-gray-900">
-                                            Iniciar Sesion<span aria-hidden="true">→</span>
+                                            Iniciar Sesión<span aria-hidden="true">→</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -48,10 +48,10 @@ function MainContent({logged, user_id}) {
                             <div className="px-6 py-4 sm:px-6 sm:py-32 lg:px-8">
                                 <div className="mx-auto max-w-2xl text-center">
                                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                        Esta es tu guía de arte interactivo Viajes Palacio.
+                                        Esta es su guía de arte interactivo Viajes Palacio  s.
                                     </h2>
                                     <p className="mx-auto mt-6 max-w-xl text-lg leading-6 text-gray-600 text-justify">
-                                        <b>Galería</b> es un recorrido por las distintas obras que puedes encontrar en nuestra galería.
+                                        <b>Galería</b> es un recorrido por las distintas obras que puede encontrar en nuestra galería.
                                     </p>
                                     <p className="mx-auto mt-6 max-w-xl text-lg leading-6 text-gray-600 text-justify">
                                         <b>Cartera</b> Es una cartera de monedas digitales que podrá adquirir contestando las preguntas que se presentaran después de la premiación y usarlas para subastar por alguna de las obras.

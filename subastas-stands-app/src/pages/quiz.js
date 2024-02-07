@@ -34,11 +34,11 @@ function QuizPage({ user_id}) {
                     <div className="px-6 py-6 sm:px-6 sm:py-32 lg:px-8">
                         <div className="mx-auto max-w-2xl text-center">
                             <p className="mx-auto mt-2 max-w-xl text-lg text-justify leading-6 text-gray-600">
-                                Para conocer las preguntas y respuestas presta atención al presentador y a la pantalla, ya que ahí
-                                es donde podras conocerlas.
+                                Para conocer las preguntas y respuestas preste atención al presentador y a la pantalla, ya que ahí
+                                es donde podrá conocerlas.
                             </p>
                             <p className="mx-auto mt-2 max-w-xl text-lg text-justify leading-6 text-gray-600">
-                                En este cuestionario no se puede retroceder de pregunta, así que elige sabiamente tu respuesta.
+                                En este cuestionario no se puede retroceder de pregunta, así que elija sabiamente su respuesta.
                             </p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function QuizPage({ user_id}) {
                         <div className="px-6 py-6 sm:px-6 sm:py-32 lg:px-8">
                             <div className="mx-auto max-w-2xl text-center">
                                 <p className="mx-auto mt-2 max-w-xl text-lg font-semibold text-center leading-6 text-gray-600">
-                                    Lo sentimos, pero ya has contestado el cuestionario y solo hay un intento.
+                                    Lo sentimos, pero ya ha contestado el cuestionario y solo hay un intento.
                                 </p>
                             </div>
                         </div>
