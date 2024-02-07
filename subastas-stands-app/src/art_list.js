@@ -34,7 +34,7 @@ const art_list = [
       "id": 3,
       "title": "BorealAuroraImg",
       "img": BorealAuroraImg,
-      "href": "https:/8th.io/ncydd"
+      "href": "https://8th.io/ncydd"
     },
     {
       "id": 4,
